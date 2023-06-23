@@ -1,0 +1,90 @@
+<!-- <form #form="ngForm" (ngSubmit)="submitForm(form)">
+    <label>
+     Nome:
+    <input type="text" name="nome" #nome="ngModel" [ngModel]="nome.value" required>
+    <span *ngIf="!nome.valid && (nome.dirty && nome.touched)">
+        Invalid
+    </span>
+    </label> 
+
+    <br>
+    <br>
+
+    {{nome.valid}} 
+    {{nome.dirty}} Dirty quando "suja" o input, ex: colocar um carectere e mudar de False para True
+    {{nome.touched}} "Detecta" quando o usuário clica no formulário
+
+
+     {{form.valid}} 
+
+ 
+    <br>
+    <br>
+
+    <label>
+        Masculino:
+       <input type="radio" name="sexo" value="Masculino" ngModel>
+       </label> 
+   
+       <br>
+       <br>
+
+       <label>
+        Feminino:
+       <input type="radio" name="sexo" value="Feminino" ngModel>
+       </label> 
+   
+       <br>
+       <br>
+
+       <label>
+        Outros:
+       <input type="radio" name="sexo" value="Outros" ngModel>
+       </label> 
+   
+       <br>
+       <br>
+
+       <label>
+        Angular:
+       <input type="checkbox" name="angular"  ngModel>
+       </label> 
+   
+       <br>
+       <br>
+
+       <label>
+        HTML:
+       <input type="checkbox" name="html"  ngModel>
+       </label> 
+   
+       <br>
+       <br>
+
+       <label>
+        Outra:
+       <input type="checkbox" name="outra"  ngModel>
+       </label> 
+   
+       <br>
+       <br>
+    
+       <select name="comidas" ngModel>
+        <option value="">Selecione Um Alimento</option>
+        <option *ngFor="let item of listComidas" [ngValue]="item">  /ngValue serve pra "repassar" mais de uma string
+            {{item.comidas}} - {{item.preco}}
+        </option>
+        
+       </select>
+
+       <br>
+       <br>
+</form>
+
+
+<button [disabled]="form.invalid">Enviar Dados</button> Usando .invalid no Disabled, mantém o botão "desligado" pois algo obrigatório não foi feito
+
+
+<br>
+<br>
+{{ form.value | json }}  -->
